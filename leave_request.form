@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 18,
+  "id": "leave_request_form",
+  "type": "default",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.6.0",
+  "components": [
+    {
+      "label": "Name",
+      "type": "textfield",
+      "id": "Field_Name",
+      "key": "name",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Date",
+      "type": "datetime",
+      "id": "Field_Date",
+      "key": "date",
+      "subtype": "date",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Reason",
+      "type": "textarea",
+      "id": "Field_Reason",
+      "key": "reason",
+      "validate": {
+        "required": true
+      }
+    }
+  ]
+}
